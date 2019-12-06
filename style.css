@@ -1,0 +1,24 @@
+p {
+    padding: 0;
+    margin: 0;
+    width: 100px;
+}
+
+#div1{
+    background-color: blue;
+}
+.toptxt{
+    width: 400px;
+    
+}
+.inputtxt{
+    display: inline;
+}
+
+#array_numbers{
+    position: relative;
+    display: block;
+    height: 800px;
+    width: 800px;
+    background-color: grey;
+}
