@@ -4,9 +4,7 @@ p {
     width: 100px;
 }
 
-#div1{
-    background-color: blue;
-}
+
 .toptxt{
     width: 400px;
     
@@ -15,10 +13,3 @@ p {
     display: inline;
 }
 
-#array_numbers{
-    position: relative;
-    display: block;
-    height: 800px;
-    width: 800px;
-    background-color: grey;
-}
