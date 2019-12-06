@@ -1,18 +1,40 @@
 var oneToHunder = [];
 
+//create an array based on user input
+function createArr(){
+  input = document.getElementById('inputAr')
+  inputvalue = (parseInt(input.value))
 
   //push number 0->100 into oneToHunder array
-for (var i = 0;i<=100;i++){
+for (var i = 0;i<=inputvalue;i++){
   oneToHunder.push(i);
 }
-
  //randomise numbers in array
  while (oneToHunder.length) {
   var randomizer = oneToHunder.splice(Math.floor(Math.random() * oneToHunder.length), 1)
-   document.write("<p onmouseover='onHover(this.id)' onmouseout='clearId(this.id)' id='"+randomizer+"' </p>"+randomizer+" </br>")
+
+
+  //create p
+  var p = document.createElement("p");
+  p.id = randomizer
+  p.setAttribute('onmouseover','onHover(this.id)')
+  p.setAttribute('onmouseout','clearId(this.id)')
+
+  var node = document.createTextNode(randomizer);
+
+  //create div
+  var element = document.getElementById("div1");
+  element.appendChild(p);
+  //append p -> div
+  p.appendChild(node);
+
+   //document.write("<p onmouseover='onHover(this.id)' onmouseout='clearId(this.id)' id='"+randomizer+"' </p>"+randomizer+" </br>")
+
+
+
 
 }
-
+}
 
 
 
