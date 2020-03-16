@@ -29,16 +29,8 @@ for (var i = 0;i<=inputvalue;i++){
   p.appendChild(node);
 
    //document.write("<p onmouseover='onHover(this.id)' onmouseout='clearId(this.id)' id='"+randomizer+"' </p>"+randomizer+" </br>")
-
-
-
-
 }
 }
-
-
-
-
 
 //Find divisors of number
 function divisors(integer){
@@ -51,9 +43,6 @@ function divisors(integer){
       }
     }
 }
-
-
-
 
 //on mouse hover change colors
 function onHover(id){
